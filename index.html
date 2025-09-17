@@ -69,7 +69,24 @@
             padding-bottom: 10px;
         }
 
-        /* Add more specific styles as needed to match the reference website */
+        /* Make iframe responsive */
+        .slides-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 ratio */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            margin-top: 20px;
+        }
+
+        .slides-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
     </style>
     
 <!-- Google Analytics Tracking Code -->
@@ -105,55 +122,55 @@
 
         <section id="about">
             <h1>About</h1>
-            <p>I am a 3rd year PhD student in Computational Systems Bioinformatics. <br>  Background: M.Sc. Bioinformatics, B.Sc. Computer Science.</p>
+            <p>I am a 3rd year PhD student in Medical Systems Bioinformatics at the University Medical Center Hamburg-Eppendorf. <br> My Background: M.Sc. Bioinformatics, B.Sc. Computer Science.</p>
         </section>
 
         <section id="projects">
+            <h1>Current Projects</h1>
+            <p> This is work in progress, but you can have a sneak peek into what I am currently doing: </p>
+            <p>
+                <a href="https://hollow-hearing-24f.notion.site/Definitions-Analysis-of-allele-specific-expression-1c8d38ceeae18038b123f0ea0ab28a85" target="_blank">Analysis of allele-specific expression in transcriptomics</a>
+            </p>
+            <p>
+                <a href="https://hollow-hearing-24f.notion.site/Description-ASE-analysis-project-19ad38ceeae180bfb4b0e4f99b019ab4" target="_blank">ASE analysis pipeline</a>
+            </p>
 
-    <section id="projects">
-    <h1>Current Projects</h1>
-    <p>Check out what I am currently working on (still in progress): </p>
-    <p>
-        <a href="https://hollow-hearing-24f.notion.site/Definitions-Analysis-of-allele-specific-expression-1c8d38ceeae18038b123f0ea0ab28a85" target="_blank">Analysis of allele-specific expression in transcriptomics</a>
-    </p>
-    <p>
-        <a href="https://hollow-hearing-24f.notion.site/Description-ASE-analysis-project-19ad38ceeae180bfb4b0e4f99b019ab4" target="_blank">ASE analysis pipeline</a>
-    </p>
-    </section>
+            <!-- Embedded Google Slides -->
+            <div class="slides-container">
+                <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRmFRSGHqMlbphQiHfs1gk6NMkZlaP95NSyD0B2Qev30fl2XtQKtYjOg9VCfVp8Zg7F__08XGrJ1JuT/pubembed?start=true&loop=true&delayms=3000" 
+                allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+            </div>
+        </section>
 
-            <section id="publications">
-    <h1>Publications</h1>
-    <ul>
-        <li>
-            <a href="https://doi.org/10.1152/ajprenal.00404.2023" target="_blank">
-            Optimized protocol for the multiomics processing of cryopreserved human kidney tissue
-            </a>
-    Gies S.E., Hänzelmann S., Kylies D., Lassé M., Lagies S., Hausmann F., Khatri R., Zolotarev N., <strong>Poets M.</strong>, Zhang T., Demir F., Billing A.M., Quaas J., Meister E., Engesser J., Mühlig A.K., Lu S., Liu S., Chilla S., Edenhofer I., Czogalla J., Braun F., Kammerer B., Rinschen M.M., Puelles V.G., Bonn S., Lindenmeyer M., Huber T.B. (2024). 
-    
-            <br>
-            <em>American journal of physiology. Renal physiology, 327(5), F822–F844.</em>
-        </li>
-        <li>
-            <a href="https://doi.org/10.1101/2023.08.16.553482" target="_blank">
-            A universal preservation protocol for multi-omic and histological analysis of kidney tissue
-            </a>
-    Gies, S.E., Hänzelmann, S., Kylies, D., Lagies, S., Lassé, M., Hausmann, F., Khatri, R., <strong>Poets, M.</strong>, Zhang, T., Lu, S., Liu, S., Chilla, S., Edenhofer, I., Czogalla, J., Braun, F., Kammerer, B., Rinschen, M.M., Puelles, V.G., Bonn, S., Lindenmeyer, M.T., & Huber, T.B. (2023).
-    
-    <br>
-    <em>bioRxiv. https://doi.org/10.1101/2023.08.16.553482</em>
-</li>
-        <!-- Add more publications as needed -->
-    </ul>
-</section>
+        <section id="publications">
+            <h1>Publications</h1>
+            <ul>
+                <li>
+                    <a href="https://doi.org/10.1152/ajprenal.00404.2023" target="_blank">
+                    Optimized protocol for the multiomics processing of cryopreserved human kidney tissue
+                    </a>
+                    Gies S.E., Hänzelmann S., Kylies D., Lassé M., Lagies S., Hausmann F., Khatri R., Zolotarev N., <strong>Poets M.</strong>, Zhang T., Demir F., Billing A.M., Quaas J., Meister E., Engesser J., Mühlig A.K., Lu S., Liu S., Chilla S., Edenhofer I., Czogalla J., Braun F., Kammerer B., Rinschen M.M., Puelles V.G., Bonn S., Lindenmeyer M., Huber T.B. (2024). 
+                    <br>
+                    <em>American journal of physiology. Renal physiology, 327(5), F822–F844.</em>
+                </li>
+                <li>
+                    <a href="https://doi.org/10.1101/2023.08.16.553482" target="_blank">
+                    A universal preservation protocol for multi-omic and histological analysis of kidney tissue
+                    </a>
+                    Gies, S.E., Hänzelmann, S., Kylies, D., Lagies, S., Lassé, M., Hausmann, F., Khatri, R., <strong>Poets, M.</strong>, Zhang, T., Lu, S., Liu, S., Chilla, S., Edenhofer, I., Czogalla, J., Braun, F., Kammerer, B., Rinschen, M.M., Puelles, V.G., Bonn, S., Lindenmeyer, M.T., & Huber, T.B. (2023).
+                    <br>
+                    <em>bioRxiv. https://doi.org/10.1101/2023.08.16.553482</em>
+                </li>
+            </ul>
+        </section>
 
         <section id="contact">
-    <h1>Contact</h1>
-    <p>Feel free to get in touch with me.</p>
-    <a href="https://www.linkedin.com/in/manuela-weronika-poets-98a41720b" target="_blank" style="text-decoration: none;">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn Logo" style="width: 40px; height: 40px; vertical-align: middle;">
-    </a>
-</section>
-
+            <h1>Contact</h1>
+            <p>Feel free to get in touch with me.</p>
+            <a href="https://www.linkedin.com/in/manuela-weronika-poets-98a41720b" target="_blank" style="text-decoration: none;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn Logo" style="width: 40px; height: 40px; vertical-align: middle;">
+            </a>
+        </section>
     </div>
 </div>
 

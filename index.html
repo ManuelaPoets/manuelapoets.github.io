@@ -114,6 +114,37 @@
             font-size: 0.85em;
             color: #444;
         }
+
+        /* Mobile responsive */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+                box-sizing: border-box;
+            }
+
+            .sidebar ul {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 5px;
+            }
+
+            .sidebar li {
+                margin-bottom: 0;
+            }
+
+            .content {
+                padding: 15px;
+            }
+
+            .content h1 {
+                font-size: 1.4em;
+            }
+        }
+
     </style>
     
 <!-- Google Analytics Tracking Code -->

@@ -22,7 +22,6 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-        /* Sidebar Styles */
         .sidebar {
             width: 250px;
             background: #333;
@@ -57,7 +56,6 @@
             background-color: #555;
         }
 
-        /* Eudaimonia Box */
         .eudaimonia-box {
             margin-top: 30px;
             padding: 15px;
@@ -73,7 +71,6 @@
             font-size: 1em;
         }
 
-        /* Content Styles */
         .content {
             padding: 20px;
             flex: 1;
@@ -85,10 +82,9 @@
             padding-bottom: 10px;
         }
 
-        /* Make iframe responsive */
         .slides-container {
             position: relative;
-            padding-bottom: 56.25%; /* 16:9 ratio */
+            padding-bottom: 56.25%;
             height: 0;
             overflow: hidden;
             max-width: 100%;
@@ -103,20 +99,32 @@
             height: 100%;
             border: 0;
         }
+
+        .research-interests {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        .research-interests span {
+            background-color: #eee;
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 0.85em;
+            color: #444;
+        }
     </style>
     
 <!-- Google Analytics Tracking Code -->
-<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-LVVG344TVN"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-LVVG344TVN');
 </script>
 
-    
 </head>
 <body>
 
@@ -125,52 +133,78 @@
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#presentations">Presentations</a></li>
             <li><a href="#publications">Publications</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
 
-        <!-- Eudaimonia box -->
-       <div class="eudaimonia-box" style="text-align: center;">
-    <img src="https://cdn.vectorstock.com/i/500p/83/65/icarus-falling-ancient-myth-vector-19878365.jpg" 
-         alt="icaro symbol" 
-         style="width: 60px; height: auto; margin-bottom: 10px; border-radius: 5px;">
-    <p><strong>Eudaimonia</strong><br>
-    /juːˌdaɪˈmoʊniə/ <br>
-    Greek: εὐδαιμονία</p>
-    <p>“Human flourishing; living in alignment with one’s highest values.”</p>
-</div>
-
+        <div class="eudaimonia-box" style="text-align: center;">
+            <img src="https://cdn.vectorstock.com/i/500p/83/65/icarus-falling-ancient-myth-vector-19878365.jpg" 
+                 alt="icaro symbol" 
+                 style="width: 60px; height: auto; margin-bottom: 10px; border-radius: 5px;">
+            <p><strong>Eudaimonia</strong><br>
+            /juːˌdaɪˈmoʊniə/ <br>
+            Greek: εὐδαιμονία</p>
+            <p>"Human flourishing; living in alignment with one's highest values."</p>
+        </div>
     </div>
 
     <div class="content">
         <section id="home">
             <h1>Home</h1>
-            <p>Hi, I'm Manuela! <br> Welcome to my personal website. It is currently under construction and will be updated soon.</p>
+            <p>Hi, I'm Manuela! I'm a bioinformatician specializing in multi-omic analysis of aging, currently completing my PhD at the University Medical Center Hamburg-Eppendorf.</p>
         </section>
 
         <section id="about">
-    <h1>About</h1>
-    <p>
-        I am a 3rd year PhD student in Medical Systems Bioinformatics at the University Medical Center Hamburg-Eppendorf. <br>
-        My Background: M.Sc. Bioinformatics, B.Sc. Computer Science.
-    </p>
-    <p><strong>Available for job and project opportunities starting Q1 2026.</strong></p>
-</section>
-
-
-        <section id="projects">
-            <h1>Current Projects</h1>
-            <p> This is work in progress, but you can have a sneak peek into what I am currently doing: </p>
+            <h1>About</h1>
             <p>
-                <a href="https://hollow-hearing-24f.notion.site/Aging-Allele-specific-analysis-1a0d38ceeae180629b52cd53fbc6e9c4" target="_blank">Analysis of allele-specific expression in transcriptomics</a>
+                I am completing my PhD in Medical Systems Bioinformatics at the University Medical Center Hamburg-Eppendorf, where my research focuses on transcriptomic signatures of aging in kidney and skeletal muscle tissue.
             </p>
             <p>
-                <a href="https://hollow-hearing-24f.notion.site/Description-ASE-analysis-project-19ad38ceeae180bfb4b0e4f99b019ab4" target="_blank">ASE analysis pipeline</a>
+                My work integrates bulk and single-nucleus RNA-seq with pathway enrichment, cell-cell communication analysis (CellChat), and cross-tissue approaches to understand how dietary and pharmacological interventions modulate aging transcriptomes.
+            </p>
+            <p>
+                <strong>Background:</strong> M.Sc. Bioinformatics (Universität Hamburg), B.Sc. Computer Science (Universität zu Lübeck). Previous corporate R&D experience at Beiersdorf AG.
+            </p>
+            <p>
+                <strong>Open to opportunities in longevity science, precision health, and translational aging research.</strong>
             </p>
 
-            <!-- Embedded Google Slides -->
-            <h3>Lightning Talk @ bAIome Mini Symposium: next-gen biomedical AI- new developments & applications (Sept 2025) </h3>
+            <h3>Research Interests</h3>
+            <div class="research-interests">
+                <span>Aging Transcriptomics</span>
+                <span>Multi-omics Integration</span>
+                <span>Biomarkers of Aging</span>
+                <span>Longevity & Precision Health</span>
+                <span>Single-cell & Single-nucleus RNA-seq</span>
+                <span>Cell-cell Communication</span>
+                <span>Dietary Interventions</span>
+                <span>Wearable Health Data</span>
+                <span>Synthetic Biological Intelligence</span>
+            </div>
+        </section>
+
+        <section id="research">
+            <h1>Research</h1>
+            <h3>PhD Thesis</h3>
+            <p>
+                <strong>Transcriptomic Effects of Dietary Restriction with Activin Signaling Inhibition in the ERCC1 &Delta;/&minus; Aging Mouse Model</strong>
+            </p>
+            <p>
+                Multi-omic analysis of aging signatures across kidney and skeletal muscle tissue. 30 bulk RNA-seq samples, ~57,000 single nuclei, three experimental conditions. Methods include DESeq2, Seurat, CellChat, GSEA, and a novel rescue framework quantifying how interventions reverse age-associated gene expression changes.
+            </p>
+
+            <h3>Master's Thesis</h3>
+            <p>
+                <strong>Machine Learning Approaches for Alternative Splicing Analysis from Single-cell RNA-Sequences</strong>
+            </p>
+            <p>Universität Hamburg, 2022</p>
+        </section>
+
+        <section id="presentations">
+            <h1>Presentations</h1>
+            <h3>Lightning Talk @ bAIome Mini Symposium: Next-Gen Biomedical AI — New Developments & Applications (Sept 2025)</h3>
             <div class="slides-container">
                 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRmFRSGHqMlbphQiHfs1gk6NMkZlaP95NSyD0B2Qev30fl2XtQKtYjOg9VCfVp8Zg7F__08XGrJ1JuT/pubembed?start=true&loop=true&delayms=3000" 
                 allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
@@ -184,14 +218,16 @@
                     <a href="https://doi.org/10.1152/ajprenal.00404.2023" target="_blank">
                     Optimized protocol for the multiomics processing of cryopreserved human kidney tissue
                     </a>
+                    <br>
                     Gies S.E., Hänzelmann S., Kylies D., Lassé M., Lagies S., Hausmann F., Khatri R., Zolotarev N., <strong>Poets M.</strong>, Zhang T., Demir F., Billing A.M., Quaas J., Meister E., Engesser J., Mühlig A.K., Lu S., Liu S., Chilla S., Edenhofer I., Czogalla J., Braun F., Kammerer B., Rinschen M.M., Puelles V.G., Bonn S., Lindenmeyer M., Huber T.B. (2024). 
                     <br>
-                    <em>American journal of physiology. Renal physiology, 327(5), F822–F844.</em>
+                    <em>American Journal of Physiology — Renal Physiology, 327(5), F822–F844.</em>
                 </li>
-                <li>
+                <li style="margin-top: 15px;">
                     <a href="https://doi.org/10.1101/2023.08.16.553482" target="_blank">
                     A universal preservation protocol for multi-omic and histological analysis of kidney tissue
                     </a>
+                    <br>
                     Gies, S.E., Hänzelmann, S., Kylies, D., Lagies, S., Lassé, M., Hausmann, F., Khatri, R., <strong>Poets, M.</strong>, Zhang, T., Lu, S., Liu, S., Chilla, S., Edenhofer, I., Czogalla, J., Braun, F., Kammerer, B., Rinschen, M.M., Puelles, V.G., Bonn, S., Lindenmeyer, M.T., & Huber, T.B. (2023).
                     <br>
                     <em>bioRxiv. https://doi.org/10.1101/2023.08.16.553482</em>
@@ -201,7 +237,7 @@
 
         <section id="contact">
             <h1>Contact</h1>
-            <p>Feel free to get in touch with me.</p>
+            <p>I'm open to conversations about aging research, longevity science, precision health, and collaboration opportunities. Feel free to get in touch.</p>
             <a href="https://www.linkedin.com/in/manuela-weronika-poets-98a41720b" target="_blank" style="text-decoration: none;">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn Logo" style="width: 40px; height: 40px; vertical-align: middle;">
             </a>
